@@ -71,4 +71,4 @@ const elementsP = document.querySelectorAll("p"); // Obtengo todos los elementos
 
 const thirdP = elementsP[2].querySelectorAll("a"); // Guardo el tercer parrafo
 
-console.log(`There are ${thirdP.length} links`);
+console.log(`There are ${thirdP.length} links`); // Imprimo por consola
