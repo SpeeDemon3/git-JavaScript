@@ -69,4 +69,6 @@ console.log(`There are ${countHrefFound} in index.html`); // Imprimo por consola
 
 const elementsP = document.querySelectorAll("p"); // Obtengo todos los elementos p
 
-const thirdP = elementsP[2]; // Guardo el tercer parrafo
+const thirdP = elementsP[2].querySelectorAll("a"); // Guardo el tercer parrafo
+
+console.log(`There are ${thirdP.length} links`);
