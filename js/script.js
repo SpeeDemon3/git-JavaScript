@@ -20,7 +20,7 @@ console.log(arrayTagsA.length); // Imprimo por consola el numero de elementos qu
 
 // Direccion del penultimo enlace
 
-let findHref = "http://prueba4"; // Referencia del penultimo enlace
+const findHref = "http://prueba4"; // Referencia del penultimo enlace
 
 const _tagsA = document.getElementsByTagName("a"); // Obtengo los elementos con la tag 'a'
 
@@ -44,4 +44,26 @@ for (let i = 0; i < _tagsA.length; i++) {
 
 // Numero de enlaces que apuntan a http://prueba
 
-// Numero de enlaces del tercer p�rrafo
+const findHref2 = "http://prueba"; // Referencia que necesito encontrar
+
+const _tagsA2 = document.getElementsByTagName("a"); // Obtengo los elementos con la tag 'a'
+
+let countHrefFound = 0; // Variable contador
+
+for (let i = 0; i < _tagsA2.length; i++) {
+
+    let href = _tagsA2[i].getAttribute("href");
+
+    if(href === findHref2) {
+
+        countHrefFound++; // Si encontramos una referencia igual a la buscada sumamos 1 al contador
+
+    }
+
+}
+
+console.log(`There are ${countHrefFound} in index.html`); // Imprimo por consola
+
+
+// Numero de enlaces del tercer parrafo
+
