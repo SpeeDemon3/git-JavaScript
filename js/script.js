@@ -26,8 +26,19 @@ const _tagsA = document.getElementsByTagName("a"); // Obtengo los elementos con 
 
 for (let i = 0; i < _tagsA.length; i++) {
 
-    // Obtengo el valor del atributo 'href' de la etiqueta actual
+    // Obtengo el valor del atributo 'href' de la etiqueta actual en la posicion [i]
     let href = _tagsA[i].getAttribute('href');
+
+    // Comparo el href actual con el buscado
+    if (href === findHref) {
+
+        // Si se encuentra el href buscado guardo el valor en una constante
+        const tagFound = _tagsA[i];
+
+        // Imprimo por consola el valor
+        console.log(tagFound);
+
+    } 
 
 }
 
