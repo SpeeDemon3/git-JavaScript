@@ -65,5 +65,4 @@ for (let i = 0; i < _tagsA2.length; i++) {
 console.log(`There are ${countHrefFound} in index.html`); // Imprimo por consola
 
 
-
 // Numero de enlaces del tercer p�rrafo
