@@ -48,13 +48,21 @@ const findHref2 = "http://prueba"; // Referencia que necesito encontrar
 
 const _tagsA2 = document.getElementsByTagName("a"); // Obtengo los elementos con la tag 'a'
 
-let found = false; // Condicion para poder salir del bucle
+let countHrefFound = 0; // Variable contador
 
-while(!found) {
+for (let i = 0; i < _tagsA2.length; i++) {
 
-    
+    let href = _tagsA2[i].getAttribute("href");
+
+    if(href === findHref2) {
+
+        countHrefFound++; // Si encontramos una referencia igual a la buscada sumamos 1 al contador
+
+    }
 
 }
+
+console.log(`There are ${countHrefFound} in index.html`); // Imprimo por consola
 
 
 
