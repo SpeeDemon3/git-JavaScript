@@ -11,9 +11,11 @@
 // Numero de enlaces de la pagina
 console.log("Hello JS");
 
-let numTagsA = document.getElementsByName('a');
+let tagsA = document.getElementsByTagName('a'); // Obtengo los elementos con la tag 'a'
 
-console.log(numTagsA.length());
+const arrayTagsA = [...tagsA]; // Convierto los elementos recibidos en un array
+
+console.log(arrayTagsA.length); // Imprimo por consola el numero de elementos que contiene el array
 
 
 // Direccion del penultimo enlace
