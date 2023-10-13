@@ -67,3 +67,6 @@ console.log(`There are ${countHrefFound} in index.html`); // Imprimo por consola
 
 // Numero de enlaces del tercer parrafo
 
+const elementsP = document.querySelectorAll("p"); // Obtengo todos los elementos p
+
+const thirdP = elementsP[2]; // Guardo el tercer parrafo
